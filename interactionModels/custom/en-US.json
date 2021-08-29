@@ -1,0 +1,185 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "movie memo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "FullDescribeIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "give details about {movie}",
+            "give me details about {movie}",
+            "what\u0027s {movie}",
+            "tell me about {movie}",
+            "what series is {movie}",
+            "what movie is {movie}",
+            "what is {movie}",
+            "give details about {movie} from {year}",
+            "give me details about {movie} from {year}",
+            "what\u0027s {movie} from {year}",
+            "tell me about {movie} from {year}",
+            "what series is {movie} from {year}",
+            "what movie is {movie} from {year}",
+            "what is {movie} from {year}",
+            "give details about {movie} in {year}",
+            "give me details about {movie} in {year}",
+            "what\u0027s {movie} in {year}",
+            "tell me about {movie} in {year}",
+            "what series is {movie} in {year}",
+            "what movie is {movie} in {year}",
+            "what is {movie} in {year}"
+          ]
+        },
+        {
+          "name": "WhoActedInMovieIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "what actors acted in {movie} from {year}",
+            "who were some actors in {movie} from {year}",
+            "who were the actors in {movie} from {year}",
+            "which actors acted in {movie} from {year}",
+            "who acted in {movie} from {year}",
+            "what actors acted in {movie} in {year}",
+            "who were some actors in {movie} in {year}",
+            "who were the actors in {movie} in {year}",
+            "which actors acted in {movie} in {year}",
+            "who acted in {movie} in {year}",
+            "what actors acted in {movie}",
+            "who were some actors in {movie}",
+            "who were the actors in {movie}",
+            "which actors acted in {movie}",
+            "who acted in {movie}"
+          ]
+        },
+        {
+          "name": "WhatIsMoviePlotIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "what is the plot of {movie} in {year}",
+            "what is {movie} in {year} about",
+            "what is the plot of {movie} from {year}",
+            "what is {movie} from {year} about",
+            "what is the plot of {movie}",
+            "what is {movie} about"
+          ]
+        },
+        {
+          "name": "HowWasMovieRatedIntent",
+          "slots": [
+            {
+              "name": "movie",
+              "type": "AMAZON.Movie"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "what\u0027s the rating of {movie}",
+            "what is the rating of {movie}",
+            "how was the television series {movie} rated",
+            "how was the tv series {movie} rated",
+            "how was the series {movie} rated",
+            "how was the show {movie} rated",
+            "how was the movie {movie} rated",
+            "how was {movie} rated",
+            "how is the television series {movie} rated",
+            "how is the tv series {movie} rated",
+            "how is the series {movie} rated",
+            "how is the show {movie} rated",
+            "how is the movie {movie} rated",
+            "how is {movie} rated",
+            "how was the {year} television series {movie} rated",
+            "how was the {year} tv series {movie} rated",
+            "how was the {year} series {movie} rated",
+            "how was the {year} show {movie} rated",
+            "how was the {year} movie {movie} rated",
+            "how is the {year} television series {movie} rated",
+            "how is the {year} tv series {movie} rated",
+            "how is the {year} series {movie} rated",
+            "how is the {year} show {movie} rated",
+            "how is the {year} movie {movie} rated",
+            "what\u0027s the rating of {movie} from {year}",
+            "what is the rating of {movie} from {year}",
+            "how was the television series {movie} from {year} rated",
+            "how was the tv series {movie} from {year} rated",
+            "how was the series {movie} from {year} rated",
+            "how was the show {movie} from {year} rated",
+            "how was the movie {movie} from {year} rated",
+            "how was {movie} from {year} rated",
+            "how is the television series {movie} from {year} rated",
+            "how is the tv series {movie} from {year} rated",
+            "how is the series {movie} from {year} rated",
+            "how is the show {movie} from {year} rated",
+            "how is the movie {movie} from {year} rated",
+            "how is {movie} from {year} rated",
+            "what\u0027s the rating of {movie} in {year}",
+            "what is the rating of {movie} in {year}",
+            "how was the television series {movie} in {year} rated",
+            "how was the tv series {movie} in {year} rated",
+            "how was the series {movie} in {year} rated",
+            "how was the show {movie} in {year} rated",
+            "how was the movie {movie} in {year} rated",
+            "how was {movie} in {year} rated",
+            "how is the television series {movie} in {year} rated",
+            "how is the tv series {movie} in {year} rated",
+            "how is the series {movie} in {year} rated",
+            "how is the show {movie} in {year} rated",
+            "how is the movie {movie} in {year} rated",
+            "how is {movie} in {year} rated"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "5"
+}
